@@ -1,0 +1,6 @@
+/.idea
+/.venv
+/.git
+/benchmarks/sv-benchmarks/c
+/benchmarks/sv-benchmarks/.reuse
+/benchmarks/sv-benchmarks/LICENSES

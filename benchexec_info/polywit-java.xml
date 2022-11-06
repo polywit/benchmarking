@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
+<benchmark tool=".benchexec_info" timelimit="2 min" memlimit="8 GB" cpuCores="4">
+
+<require cpuModel="Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz" cpuCores="4"/>
+
+  <resultfiles>**/*.graphml</resultfiles>
+
+<rundefinition name="SV-COMP22_assert_java">
+  <requiredfiles>../benchmarks/witnesses/SV-COMP22_assert_java.ReachSafety-Java/${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--witness">../benchmarks/witnesses/SV-COMP22_assert_java.ReachSafety-Java/${taskdef_name}/witness.graphml</option>
+
+  <tasks name="ReachSafety-Java.set">
+    <includesfile>../benchmarks/sv-benchmarks/java/ReachSafety-Java.set</includesfile>
+    <propertyfile expectedverdict="false">../benchmarks/sv-benchmarks/java/properties/assert_java.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+</benchmark>
+
