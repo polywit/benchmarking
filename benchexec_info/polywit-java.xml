@@ -7,8 +7,8 @@
   <resultfiles>**/*.graphml</resultfiles>
 
 <rundefinition name="SV-COMP22_assert_java">
-  <requiredfiles>../benchmarks/witnesses/SV-COMP22_assert_java.ReachSafety-Java/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--witness">../benchmarks/witnesses/SV-COMP22_assert_java.ReachSafety-Java/${taskdef_name}/witness.graphml</option>
+  <requiredfiles>../benchmarks/witnesses/sv-benchmarks/java/${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--witness">../benchmarks/witnesses/sv-benchmarks/java/${taskdef_name}/witness.graphml</option>
 
   <tasks name="ReachSafety-Java.set">
     <includesfile>../benchmarks/sv-benchmarks/java/ReachSafety-Java.set</includesfile>
