@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
+    <default>&lt;command-line&gt;</default>
+  </key>
+  <key attr.name="invariant" attr.type="string" for="node" id="invariant"/>
+  <key attr.name="invariant.scope" attr.type="string" for="node" id="invariant.scope"/>
+  <key attr.name="nodeType" attr.type="string" for="node" id="nodetype">
+    <default>path</default>
+  </key>
+  <key attr.name="isFrontierNode" attr.type="boolean" for="node" id="frontier">
+    <default>false</default>
+  </key>
+  <key attr.name="isViolationNode" attr.type="boolean" for="node" id="violation">
+    <default>false</default>
+  </key>
+  <key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry">
+    <default>false</default>
+  </key>
+  <key attr.name="isSinkNode" attr.type="boolean" for="node" id="sink">
+    <default>false</default>
+  </key>
+  <key attr.name="enterLoopHead" attr.type="boolean" for="edge" id="enterLoopHead">
+    <default>false</default>
+  </key>
+  <key attr.name="threadNumber" attr.type="int" for="node" id="thread">
+    <default>0</default>
+  </key>
+  <key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+  <key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+  <key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+  <key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+  <key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+  <key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+  <key attr.name="sourcecode" attr.type="string" for="edge" id="sourcecode"/>
+  <key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+  <key attr.name="control" attr.type="string" for="edge" id="control"/>
+  <key attr.name="assumption" attr.type="string" for="edge" id="assumption"/>
+  <key attr.name="assumption.resultfunction" attr.type="string" for="edge" id="assumption.resultfunction"/>
+  <key attr.name="assumption.scope" attr.type="string" for="edge" id="assumption.scope"/>
+  <key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+  <key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+  <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+  <graph edgedefault="directed">
+    <data key="sourcecodelang">C</data>
+    <node id="sink"/>
+    <node id="0.49">
+      <data key="entry">true</data>
+    </node>
+    <edge source="0.49" target="74.73">
+      <data key="originfile">kotlin/jvm/internal/Intrinsics.java</data>
+      <data key="startline">130</data>
+      <data key="sourcecode">[true]</data>
+    </edge>
+    <node id="74.73"/>
+    <edge source="74.73" target="31.86">
+      <data key="originfile">polywit/Verifier.kt</data>
+      <data key="startline">12</data>
+      <data key="assumption">this = &amp;dynamic_object13.@java.lang.Object.@class_identifier;</data>
+      <data key="assumption.scope">java::polywit.Verifier.&lt;init&gt;:()V</data>
+    </edge>
+    <node id="31.86"/>
+    <edge source="31.86" target="8.89">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">5</data>
+      <data key="assumption">this = &amp;dynamic_object13.@java.lang.Object.@class_identifier;</data>
+      <data key="assumption.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </edge>
+    <node id="8.89"/>
+    <edge source="8.89" target="12.94">
+      <data key="originfile">polywit/Verifier.kt</data>
+      <data key="startline">36</data>
+      <data key="assumption">dynamic_object14.@class_identifier = "java::java.lang.String";</data>
+      <data key="assumption.scope">java::polywit.Verifier.nondetInt:()I</data>
+    </edge>
+    <node id="12.94"/>
+    <edge source="12.94" target="15.99">
+      <data key="originfile">polywit/Verifier.kt</data>
+      <data key="startline">36</data>
+      <data key="assumption">this = &amp;dynamic_object14.@class_identifier;</data>
+      <data key="assumption.scope">java::polywit.Verifier.nondetInt:()I</data>
+    </edge>
+    <node id="15.99"/>
+    <edge source="15.99" target="35.108">
+      <data key="originfile">polywit/Verifier.kt</data>
+      <data key="startline">36</data>
+      <data key="assumption">this = &amp;dynamic_object14.@class_identifier;</data>
+      <data key="assumption.scope">java::polywit.Verifier.nondetInt:()I</data>
+    </edge>
+    <node id="35.108"/>
+    <edge source="35.108" target="37.110">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">5</data>
+      <data key="assumption">i = 0;</data>
+      <data key="assumption.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </edge>
+    <node id="37.110">
+      <data key="violation">true</data>
+    </node>
+    <edge source="37.110" target="sink">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">6</data>
+    </edge>
+  </graph>
+</graphml>
