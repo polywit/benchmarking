@@ -43,6 +43,7 @@
   <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
   <graph edgedefault="directed">
     <data key="sourcecodelang">C</data>
+    <data key="witness-type">violation_witness</data>
     <node id="sink"/>
     <node id="0.49">
       <data key="entry">true</data>
@@ -53,18 +54,11 @@
       <data key="sourcecode">[true]</data>
     </edge>
     <node id="74.73"/>
-    <edge source="74.73" target="31.86">
+    <edge source="74.73" target="8.89">
       <data key="originfile">polywit/Verifier.kt</data>
       <data key="startline">12</data>
       <data key="assumption">this = &amp;dynamic_object13.@java.lang.Object.@class_identifier;</data>
       <data key="assumption.scope">java::polywit.Verifier.&lt;init&gt;:()V</data>
-    </edge>
-    <node id="31.86"/>
-    <edge source="31.86" target="8.89">
-      <data key="originfile">Main.kt</data>
-      <data key="startline">5</data>
-      <data key="assumption">this = &amp;dynamic_object13.@java.lang.Object.@class_identifier;</data>
-      <data key="assumption.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
     </edge>
     <node id="8.89"/>
     <edge source="8.89" target="12.94">
