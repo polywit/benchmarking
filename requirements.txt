@@ -1,3 +1,4 @@
-benchexec
+benchexec==3.15
 networkx==2.8.7
 javalang==0.13.0
+kopyt==0.0.2

@@ -2,9 +2,9 @@ import org.polywit.benchmarks.Verifier
 
 fun main(args: Array<String>) {
     try {
-        val denom = Verifier.nondetInt()
-        val j = 10 / denom
-    } catch (exc: ArithmeticException) {
+        val a = IntArray(4)
+        a[Verifier.nondetInt()] = 0
+    } catch (exc: Exception) {
         throw AssertionError()
     }
 }

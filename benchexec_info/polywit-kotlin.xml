@@ -5,14 +5,14 @@
 <require cpuModel="Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz" cpuCores="4"/>
 
   <resultfiles>**/*.graphml</resultfiles>
-  <option name="java"/>
+  <option name="kotlin"/>
 
-<rundefinition name="sv-comp-java">
-  <requiredfiles>../benchmarks/witnesses/sv-benchmarks/java/${taskdef_name}/witness.graphml</requiredfiles>
-  <option name="--witness">../benchmarks/witnesses/sv-benchmarks/java/${taskdef_name}/witness.graphml</option>
+<rundefinition name="sv-comp-kotlin">
+  <requiredfiles>../benchmarks/witnesses/polywit-benchmarks/kotlin/${taskdef_name}/witness.graphml</requiredfiles>
+  <option name="--witness">../benchmarks/witnesses/polywit-benchmarks/kotlin/${taskdef_name}/witness.graphml</option>
 
-  <tasks name="ReachSafety-Java.set">
-    <includesfile>../benchmarks/sv-benchmarks/java/ReachSafety-Java.set</includesfile>
+  <tasks name="ReachSafety-Kotlin.set">
+    <includesfile>../benchmarks/polywit-benchmarks/ReachSafety-Kotlin.set</includesfile>
     <propertyfile expectedverdict="false">../benchmarks/sv-benchmarks/java/properties/assert_java.prp</propertyfile>
   </tasks>
 </rundefinition>

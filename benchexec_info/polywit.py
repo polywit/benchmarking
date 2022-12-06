@@ -7,6 +7,7 @@
 
 import benchexec.tools.template
 import benchexec.result as result
+import sys
 
 
 class Tool(benchexec.tools.template.BaseTool2):
@@ -20,8 +21,7 @@ class Tool(benchexec.tools.template.BaseTool2):
         return tool_locator.find_executable("polywit")
 
     def version(self, executable):
-        return '0.2.0'
-        #return self._version_from_tool(executable)
+        return self._version_from_tool(executable)
 
     def name(self):
         return "polywit"
@@ -30,7 +30,9 @@ class Tool(benchexec.tools.template.BaseTool2):
         input_files = list(task.input_files)
         benchmark = input_files[-1]
         packages = input_files[0:-1]
-        return [executable] + ['java'] + [benchmark] + ['--packages'] +  packages + options
+        lang = options[0]
+        options = options[1:]
+        return [executable] + [lang] + [benchmark] + ['--packages'] + packages + options
 
     def determine_result(self, run):
         output = run.output

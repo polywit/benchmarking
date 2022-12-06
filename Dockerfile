@@ -14,6 +14,13 @@ RUN apt-get install -y \
        openjdk-8-jdk-headless \
        python3-networkx\
        python3-pip
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+RUN apt-get -qq -y install curl
+RUN apt-get install -y unzip
+RUN apt-get install -y zip
+RUN curl -s https://get.sdkman.io | bash
+RUN chmod a+x "$HOME/.sdkman/bin/sdkman-init.sh"
+RUN source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install kotlin
 WORKDIR /polywit/benchmarks
 COPY . .
 RUN pip3 install -r requirements.txt
