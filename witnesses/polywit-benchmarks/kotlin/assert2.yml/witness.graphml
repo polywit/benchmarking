@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
+    <default>&lt;command-line&gt;</default>
+  </key>
+  <key attr.name="invariant" attr.type="string" for="node" id="invariant"/>
+  <key attr.name="invariant.scope" attr.type="string" for="node" id="invariant.scope"/>
+  <key attr.name="isViolationNode" attr.type="boolean" for="node" id="violation">
+    <default>false</default>
+  </key>
+  <key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry">
+    <default>false</default>
+  </key>
+  <key attr.name="isSinkNode" attr.type="boolean" for="node" id="sink">
+    <default>false</default>
+  </key>
+  <key attr.name="enterLoopHead" attr.type="boolean" for="edge" id="enterLoopHead">
+    <default>false</default>
+  </key>
+  <key attr.name="cyclehead" attr.type="boolean" for="edge" id="cyclehead">
+    <default>false</default>
+  </key>
+  <key attr.name="threadId" attr.type="int" for="edge" id="threadId">
+    <default>0</default>
+  </key>
+  <key attr.name="createThread" attr.type="int" for="edge" id="createThread">
+    <default>0</default>
+  </key>
+  <key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+  <key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+  <key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+  <key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+  <key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+  <key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+  <key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+  <key attr.name="control" attr.type="string" for="edge" id="control"/>
+  <key attr.name="assumption" attr.type="string" for="edge" id="assumption"/>
+  <key attr.name="assumption.resultfunction" attr.type="string" for="edge" id="assumption.resultfunction"/>
+  <key attr.name="assumption.scope" attr.type="string" for="edge" id="assumption.scope"/>
+  <key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+  <key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+  <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+  <graph edgedefault="directed">
+    <data key="sourcecodelang">C</data>
+    <node id="sink"/>
+    <node id="917.131">
+      <data key="entry">true</data>
+    </node>
+    <edge source="917.131" target="0.169">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">3</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="0.169"/>
+    <edge source="0.169" target="156.193">
+      <data key="originfile">kotlin/jvm/internal/Intrinsics.java</data>
+      <data key="startline">130</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="156.193"/>
+    <edge source="156.193" target="37.206">
+      <data key="originfile">org/polywit/benchmarks/Verifier.kt</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="37.206"/>
+    <edge source="37.206" target="8.209">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">3</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="8.209"/>
+    <edge source="8.209" target="12.215">
+      <data key="originfile">org/polywit/benchmarks/Verifier.kt</data>
+      <data key="startline">29</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="12.215"/>
+    <edge source="12.215" target="15.220">
+      <data key="originfile">org/polywit/benchmarks/Verifier.kt</data>
+      <data key="startline">29</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="15.220"/>
+    <edge source="15.220" target="40.228">
+      <data key="originfile">org/polywit/benchmarks/Verifier.kt</data>
+      <data key="startline">29</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="40.228"/>
+    <edge source="40.228" target="41.229">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">3</data>
+      <data key="threadId">0</data>
+      <data key="assumption">i = 1000;</data>
+      <data key="assumption.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </edge>
+    <node id="41.229"/>
+    <edge source="41.229" target="45.230">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">4</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="45.230"/>
+    <edge source="45.230" target="50.233">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">4</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="50.233"/>
+    <edge source="50.233" target="103.256">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">4</data>
+      <data key="threadId">0</data>
+      <data key="assumption">anonlocal::2i = 0;</data>
+      <data key="assumption.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </edge>
+    <node id="103.256"/>
+    <edge source="103.256" target="135.273">
+      <data key="originfile">kotlin/AssertionsJVM.kt</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="135.273"/>
+    <edge source="135.273" target="138.281">
+      <data key="originfile">kotlin/AssertionsJVM.kt</data>
+      <data key="startline">14</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="138.281">
+      <data key="violation">true</data>
+    </node>
+  </graph>
+</graphml>
