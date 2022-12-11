@@ -3,7 +3,7 @@ input_files:
   - exceptions15/
 properties:
   - property_file: ../../../sv-benchmarks/java/properties/assert_java.prp
-    expected_verdict: false
+    expected_verdict: true
 
 options:
   language: Kotlin
