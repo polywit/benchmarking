@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
+    <default>&lt;command-line&gt;</default>
+  </key>
+  <key attr.name="invariant" attr.type="string" for="node" id="invariant"/>
+  <key attr.name="invariant.scope" attr.type="string" for="node" id="invariant.scope"/>
+  <key attr.name="isViolationNode" attr.type="boolean" for="node" id="violation">
+    <default>false</default>
+  </key>
+  <key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry">
+    <default>false</default>
+  </key>
+  <key attr.name="isSinkNode" attr.type="boolean" for="node" id="sink">
+    <default>false</default>
+  </key>
+  <key attr.name="enterLoopHead" attr.type="boolean" for="edge" id="enterLoopHead">
+    <default>false</default>
+  </key>
+  <key attr.name="cyclehead" attr.type="boolean" for="edge" id="cyclehead">
+    <default>false</default>
+  </key>
+  <key attr.name="threadId" attr.type="int" for="edge" id="threadId">
+    <default>0</default>
+  </key>
+  <key attr.name="createThread" attr.type="int" for="edge" id="createThread">
+    <default>0</default>
+  </key>
+  <key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+  <key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+  <key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+  <key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+  <key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+  <key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+  <key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+  <key attr.name="control" attr.type="string" for="edge" id="control"/>
+  <key attr.name="assumption" attr.type="string" for="edge" id="assumption"/>
+  <key attr.name="assumption.resultfunction" attr.type="string" for="edge" id="assumption.resultfunction"/>
+  <key attr.name="assumption.scope" attr.type="string" for="edge" id="assumption.scope"/>
+  <key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+  <key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+  <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+  <graph edgedefault="directed">
+    <data key="sourcecodelang">C</data>
+    <node id="sink"/>
+    <node id="1023.281">
+      <data key="entry">true</data>
+    </node>
+    <edge source="1023.281" target="1024.294">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">14</data>
+    </edge>
+    <node id="1023.283"/>
+    <node id="1023.285"/>
+    <node id="1023.287"/>
+    <node id="1023.289"/>
+    <node id="1023.291"/>
+    <node id="1024.294">
+      <data key="invariant">dynamic_object1 = nondet_symbol(symex::nondet1);</data>
+      <data key="invariant.scope">__CPROVER__start</data>
+    </node>
+    <edge source="1024.294" target="1027.308">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">14</data>
+    </edge>
+    <node id="1024.296"/>
+    <node id="1024.298"/>
+    <node id="1024.300"/>
+    <node id="1024.302"/>
+    <node id="1027.308">
+      <data key="invariant">dynamic_object1.@java.lang.Object.@class_identifier = "java::array[reference]";</data>
+      <data key="invariant.scope">__CPROVER__start</data>
+    </node>
+    <edge source="1027.308" target="1030.312">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">14</data>
+    </edge>
+    <node id="1030.312">
+      <data key="invariant">dynamic_object1.length = nondet_array_length;</data>
+      <data key="invariant.scope">__CPROVER__start</data>
+    </node>
+    <edge source="1030.312" target="1031.313">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">14</data>
+    </edge>
+    <node id="1031.313">
+      <data key="invariant">dynamic_object1.data = (void **)dynamic_2_array;</data>
+      <data key="invariant.scope">__CPROVER__start</data>
+    </node>
+    <edge source="1031.313" target="1043.346">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">14</data>
+    </edge>
+    <node id="1031.315"/>
+    <node id="1031.317"/>
+    <node id="1031.319"/>
+    <node id="1031.321"/>
+    <node id="1031.323"/>
+    <node id="1043.346">
+      <data key="invariant">dynamic_2_array = ARRAY_OF(null);</data>
+      <data key="invariant.scope">__CPROVER__start</data>
+    </node>
+    <edge source="1043.346" target="1056.602">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">14</data>
+    </edge>
+    <node id="1043.381"/>
+    <node id="1043.416"/>
+    <node id="1043.451"/>
+    <node id="1043.486"/>
+    <node id="1056.602">
+      <data key="invariant">dynamic_object4 = nondet_symbol(symex::nondet5);</data>
+      <data key="invariant.scope">__CPROVER__start</data>
+    </node>
+    <edge source="1056.602" target="0.608">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">14</data>
+    </edge>
+    <node id="0.608">
+      <data key="invariant">args = &amp;dynamic_object1;</data>
+      <data key="invariant.scope">__CPROVER__start</data>
+    </node>
+    <edge source="0.608" target="32.613">
+      <data key="originfile">kotlin/jvm/internal/Intrinsics.java</data>
+      <data key="startline">130</data>
+    </edge>
+    <node id="32.613"/>
+    <edge source="32.613" target="33.618">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">15</data>
+    </edge>
+    <node id="32.615"/>
+    <node id="33.618">
+      <data key="invariant">dynamic_object13 = nondet_symbol(symex::nondet22);</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="33.618" target="36.621">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">15</data>
+    </edge>
+    <node id="36.621">
+      <data key="invariant">dynamic_object13.@C.@B.@A.@java.lang.Throwable.@class_identifier = "java::D";</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="36.621" target="8.624">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">15</data>
+    </edge>
+    <node id="8.624">
+      <data key="invariant">this = &amp;dynamic_object13;</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="8.624" target="12.627">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">12</data>
+    </edge>
+    <node id="12.627">
+      <data key="invariant">this = (struct C *)&amp;dynamic_object13;</data>
+      <data key="invariant.scope">java::D.&lt;init&gt;:()V</data>
+    </node>
+    <edge source="12.627" target="16.630">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">11</data>
+    </edge>
+    <node id="16.630">
+      <data key="invariant">this = (struct B *)&amp;dynamic_object13;</data>
+      <data key="invariant.scope">java::C.&lt;init&gt;:()V</data>
+    </node>
+    <edge source="16.630" target="20.633">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">10</data>
+    </edge>
+    <node id="20.633">
+      <data key="invariant">this = (struct A *)&amp;dynamic_object13;</data>
+      <data key="invariant.scope">java::B.&lt;init&gt;:()V</data>
+    </node>
+    <edge source="20.633" target="39.642">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">9</data>
+    </edge>
+    <node id="39.642">
+      <data key="invariant">this = (struct java.lang.Throwable *)&amp;dynamic_object13;</data>
+      <data key="invariant.scope">java::A.&lt;init&gt;:()V</data>
+    </node>
+    <edge source="39.642" target="40.643">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">15</data>
+    </edge>
+    <node id="40.643">
+      <data key="invariant">d = &amp;dynamic_object13;</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="40.643" target="41.648">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">16</data>
+    </edge>
+    <node id="40.645"/>
+    <node id="41.648">
+      <data key="invariant">dynamic_object14 = nondet_symbol(symex::nondet23);</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="41.648" target="44.651">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">16</data>
+    </edge>
+    <node id="44.651">
+      <data key="invariant">dynamic_object14.@B.@A.@java.lang.Throwable.@class_identifier = "java::C";</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="44.651" target="12.654">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">16</data>
+    </edge>
+    <node id="12.654">
+      <data key="invariant">this = &amp;dynamic_object14;</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="12.654" target="16.657">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">11</data>
+    </edge>
+    <node id="16.657">
+      <data key="invariant">this = (struct B *)&amp;dynamic_object14;</data>
+      <data key="invariant.scope">java::C.&lt;init&gt;:()V</data>
+    </node>
+    <edge source="16.657" target="20.660">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">10</data>
+    </edge>
+    <node id="20.660">
+      <data key="invariant">this = (struct A *)&amp;dynamic_object14;</data>
+      <data key="invariant.scope">java::B.&lt;init&gt;:()V</data>
+    </node>
+    <edge source="20.660" target="47.668">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">9</data>
+    </edge>
+    <node id="47.668">
+      <data key="invariant">this = (struct java.lang.Throwable *)&amp;dynamic_object14;</data>
+      <data key="invariant.scope">java::A.&lt;init&gt;:()V</data>
+    </node>
+    <edge source="47.668" target="48.669">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">16</data>
+    </edge>
+    <node id="48.669">
+      <data key="invariant">c = &amp;dynamic_object14;</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="48.669" target="49.674">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">17</data>
+    </edge>
+    <node id="48.671"/>
+    <node id="49.674">
+      <data key="invariant">dynamic_object15 = nondet_symbol(symex::nondet24);</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="49.674" target="52.677">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">17</data>
+    </edge>
+    <node id="52.677">
+      <data key="invariant">dynamic_object15.@A.@java.lang.Throwable.@class_identifier = "java::B";</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="52.677" target="16.680">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">17</data>
+    </edge>
+    <node id="16.680">
+      <data key="invariant">this = &amp;dynamic_object15;</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="16.680" target="20.683">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">10</data>
+    </edge>
+    <node id="20.683">
+      <data key="invariant">this = (struct A *)&amp;dynamic_object15;</data>
+      <data key="invariant.scope">java::B.&lt;init&gt;:()V</data>
+    </node>
+    <edge source="20.683" target="55.690">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">9</data>
+    </edge>
+    <node id="55.690">
+      <data key="invariant">this = (struct java.lang.Throwable *)&amp;dynamic_object15;</data>
+      <data key="invariant.scope">java::A.&lt;init&gt;:()V</data>
+    </node>
+    <edge source="55.690" target="56.691">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">17</data>
+    </edge>
+    <node id="56.691">
+      <data key="invariant">b = &amp;dynamic_object15;</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="56.691" target="57.696">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">18</data>
+    </edge>
+    <node id="56.693"/>
+    <node id="57.696">
+      <data key="invariant">dynamic_object16 = nondet_symbol(symex::nondet25);</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="57.696" target="60.699">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">18</data>
+    </edge>
+    <node id="60.699">
+      <data key="invariant">dynamic_object16.@java.lang.Throwable.@class_identifier = "java::A";</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="60.699" target="20.702">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">18</data>
+    </edge>
+    <node id="20.702">
+      <data key="invariant">this = &amp;dynamic_object16;</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="20.702" target="62.707">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">9</data>
+    </edge>
+    <node id="62.707">
+      <data key="invariant">this = (struct java.lang.Throwable *)&amp;dynamic_object16;</data>
+      <data key="invariant.scope">java::A.&lt;init&gt;:()V</data>
+    </node>
+    <edge source="62.707" target="78.712">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">18</data>
+    </edge>
+    <node id="78.712">
+      <data key="invariant">a = &amp;dynamic_object16;</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="78.712" target="170.717">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">19</data>
+    </edge>
+    <node id="170.717"/>
+    <edge source="170.717" target="174.738">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">29</data>
+    </edge>
+    <node id="174.738">
+      <data key="invariant">exc = &amp;dynamic_object16;</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="174.738" target="1057.742">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">30</data>
+    </edge>
+    <node id="174.739"/>
+    <node id="1057.742">
+      <data key="invariant">this = &amp;dynamic_object17;</data>
+      <data key="invariant.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </node>
+    <edge source="1057.742" target="sink">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">14</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
+    <default>&lt;command-line&gt;</default>
+  </key>
+  <key attr.name="invariant" attr.type="string" for="node" id="invariant"/>
+  <key attr.name="invariant.scope" attr.type="string" for="node" id="invariant.scope"/>
+  <key attr.name="isViolationNode" attr.type="boolean" for="node" id="violation">
+    <default>false</default>
+  </key>
+  <key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry">
+    <default>false</default>
+  </key>
+  <key attr.name="isSinkNode" attr.type="boolean" for="node" id="sink">
+    <default>false</default>
+  </key>
+  <key attr.name="enterLoopHead" attr.type="boolean" for="edge" id="enterLoopHead">
+    <default>false</default>
+  </key>
+  <key attr.name="cyclehead" attr.type="boolean" for="edge" id="cyclehead">
+    <default>false</default>
+  </key>
+  <key attr.name="threadId" attr.type="int" for="edge" id="threadId">
+    <default>0</default>
+  </key>
+  <key attr.name="createThread" attr.type="int" for="edge" id="createThread">
+    <default>0</default>
+  </key>
+  <key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+  <key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+  <key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+  <key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+  <key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+  <key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+  <key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+  <key attr.name="control" attr.type="string" for="edge" id="control"/>
+  <key attr.name="assumption" attr.type="string" for="edge" id="assumption"/>
+  <key attr.name="assumption.resultfunction" attr.type="string" for="edge" id="assumption.resultfunction"/>
+  <key attr.name="assumption.scope" attr.type="string" for="edge" id="assumption.scope"/>
+  <key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+  <key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+  <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+  <graph edgedefault="directed">
+    <data key="sourcecodelang">C</data>
+    <data key="witness-type">violation_witness</data>
+    <node id="sink"/>
+    <node id="935.130">
+      <data key="entry">true</data>
+    </node>
+    <edge source="935.130" target="0.167">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="0.167"/>
+    <edge source="0.167" target="168.191">
+      <data key="originfile">kotlin/jvm/internal/Intrinsics.java</data>
+      <data key="startline">130</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="168.191"/>
+    <edge source="168.191" target="39.204">
+      <data key="originfile">org/polywit/benchmarks/Verifier.kt</data>
+      <data key="startline">5</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="39.204"/>
+    <edge source="39.204" target="8.207">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="8.207"/>
+    <edge source="8.207" target="12.213">
+      <data key="originfile">org/polywit/benchmarks/Verifier.kt</data>
+      <data key="startline">29</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="12.213"/>
+    <edge source="12.213" target="15.218">
+      <data key="originfile">org/polywit/benchmarks/Verifier.kt</data>
+      <data key="startline">29</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="15.218"/>
+    <edge source="15.218" target="42.226">
+      <data key="originfile">org/polywit/benchmarks/Verifier.kt</data>
+      <data key="startline">29</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="42.226"/>
+    <edge source="42.226" target="45.228">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">7</data>
+      <data key="threadId">0</data>
+      <data key="assumption">x = 0;</data>
+      <data key="assumption.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </edge>
+    <node id="45.228"/>
+    <edge source="45.228" target="50.231">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">9</data>
+      <data key="threadId">0</data>
+      <data key="assumption">x = 1;</data>
+      <data key="assumption.scope">java::MainKt.main:([Ljava/lang/String;)V</data>
+    </edge>
+    <node id="50.231"/>
+    <edge source="50.231" target="54.237">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">14</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="54.237"/>
+    <edge source="54.237" target="26.240">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">14</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="26.240"/>
+    <edge source="26.240" target="723.243">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">4</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="723.243"/>
+    <edge source="723.243" target="60.249">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">3</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="60.249"/>
+    <edge source="60.249" target="67.254">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">14</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="67.254"/>
+    <edge source="67.254" target="115.277">
+      <data key="originfile">Main.kt</data>
+      <data key="startline">15</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="115.277"/>
+    <edge source="115.277" target="147.294">
+      <data key="originfile">kotlin/AssertionsJVM.kt</data>
+      <data key="startline">10</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="147.294"/>
+    <edge source="147.294" target="150.302">
+      <data key="originfile">kotlin/AssertionsJVM.kt</data>
+      <data key="startline">14</data>
+      <data key="threadId">0</data>
+    </edge>
+    <node id="150.302">
+      <data key="violation">true</data>
+    </node>
+  </graph>
+</graphml>
