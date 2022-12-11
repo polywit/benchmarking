@@ -24,4 +24,4 @@ RUN source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install kotlin
 WORKDIR /polywit/benchmarks
 COPY . .
 RUN pip3 install -r requirements.txt
-ENV PYTHONPATH "${PYTHONPATH}:/polywit/polywit/bin:/polywit/benchmarks/benchexec_info"
+ENV PYTHONPATH "${PYTHONPATH}:/polywit/polywit/bin:/polywit/benchmarks/benchexec-info"

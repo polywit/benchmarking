@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-2.3.dtd">
-<benchmark tool="benchexec_info.polywit" timelimit="2 min" memlimit="8 GB" cpuCores="4">
+<benchmark tool="benchexec-info.polywit" timelimit="2 min" memlimit="8 GB" cpuCores="4">
 
 <require cpuModel="Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz" cpuCores="4"/>
 
