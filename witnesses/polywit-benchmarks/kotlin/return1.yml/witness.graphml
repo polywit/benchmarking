@@ -42,7 +42,6 @@
   <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
   <graph edgedefault="directed">
     <data key="sourcecodelang">C</data>
-    <data key="witness-type">violation_witness</data>
     <node id="sink"/>
     <node id="876.128">
       <data key="entry">true</data>
